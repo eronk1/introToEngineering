@@ -13,8 +13,9 @@
             <a href="https://github.com/eronk1/introToEngineering.git">Github repo</a>
         </p>
         <center>
-            <h1>Ethan's grand adventure</h1>
+            <h1 id="title1">Ethan's grand adventure</h1>
             <img id="space" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg" width="27rem" height="18rem">
+            <h1 id="learned">Today i learned how to talk to an alpha male called ethan chang. I also learned in this class to go from a beta male to a alpha male. Goal for this class is to satisfy ethan chang.</h1>
         </center>
         <p id="second">
             8/21/23 - This is my second journal entry
@@ -28,7 +29,7 @@
                 width: 100vw;
                 padding: 0;
                 margin: 0;
-                background-color: rgb(52, 71, 87);
+                background-color: rgb(194 107 255);
                 display: grid;
                 grid-template-rows: fit-content(4rem) 1fr fit-content(4rem);
                 place-content: center;
@@ -47,18 +48,44 @@
             }
             #first,#second{
                 padding: 2rem;
+                color: #eaf2ff;
+            }
+            #learned{
+                font-size: 0.7rem;
             }
             #space{
                 border: 2rem rgb(221, 222, 135) solid;
                 border-style:ridge;
                 border-radius: 1rem;
-                width: 27rem;
-                height: 18rem;
+                width: 18rem;
+                height: 12rem;
+                margin: auto;
+                margin: 0px 4rem;
             }
             center{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                display: grid;
+                justify-content: center;
+                grid-template-areas: 
+                "h h"
+                "a b"
+                ;
+                color: white;
+                place-content: center;
+            }
+            #title1{
+                grid-area: h;
+            }
+            #space{
+                grid-area: a;
+                margin: 3rem 5rem;
+            }
+            #learned{
+                grid-area: b;
+                font-size: 2rem;
+                text-align: center;
+                margin: auto;
+                color: cornsilk;
+                padding: 0px 4rem;
             }
         </style>
     </body>
