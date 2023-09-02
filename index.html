@@ -2,90 +2,184 @@
 <html>
     <head>
         <title>
-            Ethan's ludicrous adventure
+            Ethan's grand adventure
         </title>
     </head>
     <body>
-
-        <p id="first">
-            8/20/23 - This is my first journal entry! 
-            <br>
-            <a href="https://github.com/eronk1/introToEngineering.git">Github repo</a>
-        </p>
-        <center>
-            <h1 id="title1">Ethan's grand adventure</h1>
-            <img id="space" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg" width="27rem" height="18rem">
-            <h1 id="learned">Today i learned how to talk to an alpha male called ethan chang. I also learned in this class to go from a beta male to a alpha male. Goal for this class is to satisfy ethan chang.</h1>
+        <h1 id="title1">Adventures with Ethan Chang</h1>
+        <center id="center" class="sections">
+            <img id="space" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg" width="100rem" height="18rem">
+            <h1 id="learned">The ultimate objective of this course is nothing short of a transformation into an alpha male on a scale akin to the legendary Ethan Chang.</h1>
         </center>
-        <p id="second">
-            8/21/23 - This is my second journal entry
-        </p>
+        <div class="section1 sections">
+            <p class="first">
+                8/20/23 - This is my 1st journal entry! 
+            </p>
+            <h1 class="learned2">Today, I ventured into the realm of conversing with the formidable alpha male known as Ethan Chang. The adrenaline surged through my veins like a tempestuous storm, unmatched in its ferocity, marking the inception of my formidable odyssey.</h1>
+            <a class="repo repo1" href="https://github.com/eronk1/introToEngineering.git">Github repo</a>
+            <a class="repo repo2" href="https://bing.com">Favorite website uwu</a>
+        </div>
+        <div class="sections" id="section2">
+            <p class="first">
+                8/25/23 - This is my 2nd journal entry! 
+            </p>
+            <img class="pictures" src="images/poolesajin.jpg" alt="failed to load ethan's drip :[">
+            <h1 class="learned2">The moment arrived to confront my deepest fears and exhibit my rugged prowess in executing the daring marble challenge. Ethan Chang, a watchful figure in the distance, bore witness as if my failure equaled my demise. In times such as these, there existed no space for faltering, only the stark choice between life and death. However, in the end, none of it truly held significance. It wasn't the individual that met their demise, but rather the collective brotherhood that faced its reckoning together. As it turned out, we all met our fate because our performance was nothing short of abysmal. Fueled by embarrassment, disappointment, and an unparalleled rage, Ethan Chang spared us from our destiny, ensuring my survival to see another week.</h1>
+        </div>
+        <div class="sections" id="section3">
+            <p class="first">
+                9/1/23 - This is my 3rd journal entry! 
+            </p>
+            <img class="pictures" src="images/bulb.jpg" alt="failed to load ethan's drip :[">
+            <h1 class="learned2">From the unassuming "I Forgot" website emerged a creation that opened a portal to a world where I could relive profound encounters with the enigmatic warrior, Ethan Chang. His incredible might was demonstrated through the creation of a mere light bulb, yet as its brilliance intensified, darkness shrouded everything. In the obscurity, a luminous, eerie bulb emerged, challenging me to replicate the supernatural spectacle. The task seemed insurmountable, with brilliance blinding reality, strength rendering itself feeble, intelligence verging on foolishness, challenges diminishing to insignificance, and speed agonizingly slowing. This mystical mastery belonged solely to Ethan Chang, a revelation I was privileged to witness. Week 2 end. (This design soon to be implemented bore the unmistakable imprint of the illustrious grand master, Ethan Chang, a luminary whose creative genius knew no bounds)</h1>
+        </div>
         <style>
+            :root{
+                --margin-left: 5vw;
+            }
             *{
                 font-family: monospace;
+                color: white;
+                padding: 0;
             }
             body{
-                height: 100vh;
-                width: 100vw;
                 padding: 0;
                 margin: 0;
-                background-color: rgb(194 107 255);
-                display: grid;
-                grid-template-rows: fit-content(4rem) 1fr fit-content(4rem);
-                place-content: center;
+                background: rgb(80, 77, 198);
+                margin-bottom: 10rem;
+                
+            }
+            a{
+                width: fit-content;
             }
             p{
                 font-size: 2rem;
             }
             h1{
                 margin: 0;
+                padding: 0;
                 font-size: 2.5rem;
                 padding-bottom: 1rem;
             }
-            #first,#second,center{
+            .first,#second{
                 margin: auto;
-                text-align: center;
+                margin-left: 0;
             }
-            #first,#second{
-                padding: 2rem;
+            .first,#second{
                 color: #eaf2ff;
             }
-            #learned{
-                font-size: 0.7rem;
+            .repo{
+                color: rgb(28, 172, 255);
             }
             #space{
-                border: 2rem rgb(221, 222, 135) solid;
-                border-style:ridge;
+                border: 2rem rgb(177, 255, 149) ridge;
                 border-radius: 1rem;
-                width: 18rem;
+                width: 25rem;
                 height: 12rem;
                 margin: auto;
+                margin-left: 0;
                 margin: 0px 4rem;
             }
             center{
                 display: grid;
                 justify-content: center;
-                grid-template-areas: 
-                "h h"
+                grid-template-areas:
                 "a b"
                 ;
                 color: white;
                 place-content: center;
+                width: 80rem;
+            }
+            #center{
+                margin-top: 3rem;
             }
             #title1{
-                grid-area: h;
+                color: white;
+                padding-top: 4rem;
+                margin-left: var(--margin-left);
             }
             #space{
                 grid-area: a;
-                margin: 3rem 5rem;
+                margin: 0 5rem;
+                margin-left: 0;
             }
             #learned{
                 grid-area: b;
                 font-size: 2rem;
-                text-align: center;
+                text-align: left;
                 margin: auto;
-                color: cornsilk;
-                padding: 0px 4rem;
+                margin-left: 0;
+                padding: 0px 2rem;
+            }
+            .learned2{
+                grid-area: b;
+                font-size: 1.5rem;
+            }
+            .sections{
+                display: grid;
+                margin-top: 10rem;
+                margin-left: var(--margin-left);
+                width: 80rem;
+                padding: 2rem 4rem;
+                background: linear-gradient(to bottom, rgb(52, 187, 255), rgb(167, 5, 232));
+                border: 0.1rem rgb(157, 255, 213) solid;
+                border-radius: 1rem;
+            }
+            .section1{
+                display: grid;
+                grid-template-areas: 
+                "h h h"
+                "x c c"
+                "y c c"
+                ;
+                width: 80rem;
+            }
+            .first{
+                grid-area: h;
+                padding-bottom: 2rem;
+            }
+            .learned2{
+                grid-area: c;
+                padding: 0 4rem;
+                margin: auto;
+                margin-right: 0;
+                width: 30rem;
+            }
+            .repo{
+                font-size: 2rem;
+                color: rgb(231, 255, 61);
+            }
+            .repo1{
+                grid-area: x;
+                margin-bottom: auto;
+            }
+            .repo2{
+                grid-area: y;
+                margin-top: auto;
+            }
+            #section2{
+                display: grid;
+                grid-template-areas: 
+                "h h h"
+                "p c c"
+                ;
+            }
+            .pictures{
+                grid-area: p;
+                width: 40rem;
+                border: 0.8rem rgb(0, 191, 21) ridge;
+                border-radius: 1rem;
+                margin: auto 0;
+            }
+            #section3{
+                display: grid;
+                grid-template-areas: 
+                "h h h"
+                "p c c"
+                ;
+            }
+            #section3 .pictures{
+                width: 38rem;
             }
         </style>
     </body>
